@@ -35,7 +35,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout main
-          cp -r docs/* .
+          cp -r docs/* docs/
           git add docs
           git commit -m "Deploy build to docs folder"
           git push
