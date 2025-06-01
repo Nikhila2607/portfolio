@@ -21,6 +21,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+        -name: Upload package-lock.json artifact
+         uses: actions/upload-artifact@v3
+         with:
+         name: package-lock
+         path: package-lock.json
+
       - name: Build project
         run: npm run build
 
